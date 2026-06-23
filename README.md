@@ -4,12 +4,17 @@
 
 Players join on their phones, explore a top-down map, walk up to characters (NPCs) to answer scenario questions, and climb a live leaderboard projected on the big screen — Kahoot meets a tiny Pokémon world.
 
+![WandrQuest projector view](docs/screenshots/master.png)
+
 ---
+
+### 🌐 Live site: **https://wandrquest.vercel.app**
 
 ### ▶️ Live demo (always on)
 
 | | |
 |---|---|
+| **Landing page** | https://wandrquest.vercel.app |
 | **Play the demo** (mobile-friendly) | https://wandrquest.vercel.app/game?room=DEMO |
 | **Projector view** | https://wandrquest.vercel.app/master?room=DEMO |
 | **Host console** | https://wandrquest.vercel.app/host |

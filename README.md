@@ -14,7 +14,7 @@ Players join on their phones, explore a top-down map, walk up to characters (NPC
 | **Projector view** | https://wandrquest.vercel.app/master?room=DEMO |
 | **Host console** | https://wandrquest.vercel.app/host |
 
-The always-on demo room (`DEMO`) is themed as a **Community Centre** — Reception, Library, Sports Hall, and Café zones with NPCs, obstacles, and a live leaderboard. No account needed to play.
+The always-on demo room (`DEMO`) is themed as a **Classroom** — Sharing center, Teacher, Students, and Table, along with NPCs to interact with.
 
 ---
 

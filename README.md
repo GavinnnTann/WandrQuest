@@ -147,6 +147,10 @@ Players join instantly by scanning a QR code — no typing a room code.
 * ✅ Scanning auto-fills the room and goes straight to name/role
 * ✅ Shown big on the **projector** (with the room code) and in a **host-dashboard** modal (copy-link + per-room)
 
+<img src="docs/screenshots/host-qr.png" alt="Host QR modal" width="40%" />
+
+*(The projector also shows the live join card + room code — see the projector screenshot above.)*
+
 ### 🏅 Achievement System
 
 Unlockable achievements reward exploration, teamwork, and learning.
@@ -165,6 +169,9 @@ Unlockable achievements reward exploration, teamwork, and learning.
 * ✅ End-of-game achievement summary (earned vs locked)
 * ✅ Question tagging (`category`) in the editor powers Safety Expert
 
+<img src="docs/screenshots/game-achievement.png" alt="In-game achievement unlock + item counter" width="20%" />
+<img src="docs/screenshots/end-achievements.png" alt="End-of-game achievement summary" width="20%" />
+
 ### 📊 Analytics Dashboard (`/analytics`, host-only)
 
 Actionable insights after each session, secured by RLS to the room's host.
@@ -175,12 +182,14 @@ Actionable insights after each session, secured by RLS to the room's host.
 * ✅ Activity **heatmap** of where questions were answered
 * ✅ **CSV export** and **PDF report** (print) · session switcher + history across your games
 
+<img src="docs/screenshots/analytics.png" alt="Analytics dashboard" width="45%" />
+
 ---
 
 ## 🚧 Roadmap
 
 ### 🎮 Expanded Gameplay Mechanics
 
-* ✅ **Item collection quests** — collectible items on the map, live counter, bonus points, and the Collector achievement
+* ✅ **Item collection quests** — collectible items on the map, live counter, bonus points, and the Collector achievement (the floating items and 🎒 counter are visible in the projector and player screenshots above)
 * Team-based objectives · trading & resource sharing · timed missions
 * Random world events · NPC dialogue trees · unlockable map areas · seasonal challenges

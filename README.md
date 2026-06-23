@@ -133,3 +133,84 @@ index.html        Landing page
 ## Tech stack
 
 **Phaser 3** · **nipple.js** · **Supabase** (Postgres · Realtime · Auth · Storage · RLS) · **Vercel** · vanilla JS (no framework, no bundler, no build step)
+
+---
+
+## 🚧 Roadmap
+
+Features planned for upcoming releases.
+
+### 📱 QR Code Joining
+
+Reduce player onboarding friction by allowing participants to join instantly via QR code.
+
+#### Requirements
+
+* Generate a unique QR code for every room
+* Support mobile camera scanning
+* Automatically populate room code
+* Redirect players directly to role selection
+* Display QR code on the projector screen and host dashboard
+
+---
+
+### 🏅 Achievement System
+
+Reward exploration, teamwork, and learning through unlockable achievements.
+
+#### Example Achievements
+
+| Achievement   | Requirement                           |
+| ------------- | ------------------------------------- |
+| Fast Learner  | Answer 5 questions correctly in a row |
+| Explorer      | Visit every zone                      |
+| Team Player   | Participate in a Boss challenge       |
+| Quiz Master   | Finish in the top 3                   |
+| Safety Expert | Complete all safety-related questions |
+
+#### Requirements
+
+* Achievement notifications during gameplay
+* Achievement progress tracking
+* End-of-game achievement summary
+* Optional leaderboard bonuses
+
+---
+
+### 📊 Analytics Dashboard
+
+Provide actionable insights after each session.
+
+#### Metrics
+
+* Question accuracy rates
+* Most difficult questions
+* Zone visit statistics
+* Player movement heatmaps
+* Session completion rates
+* Average response times
+* Role performance comparison
+
+#### Export Options
+
+* CSV export
+* PDF report generation
+* Session summary dashboard
+* Historical analytics across multiple games
+
+---
+
+### 🎮 Expanded Gameplay Mechanics
+
+Introduce new ways for players to interact and learn.
+
+#### Potential Mechanics
+
+* Item collection quests
+* Team-based objectives
+* Trading and resource sharing
+* Timed missions
+* Random world events
+* NPC dialogue trees
+* Unlockable map areas
+* Seasonal challenges

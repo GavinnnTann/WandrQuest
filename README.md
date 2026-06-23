@@ -22,45 +22,45 @@ The always-on demo room (`DEMO`) is themed as a **Classroom** — Sharing center
 
 **Landing**
 
-![Landing page](docs/screenshots/landing.png)
+<img src="docs/screenshots/landing.png" alt="Landing page" width="40%" />
 
 **Host sign-up** — password strength meter, confirm field, visually distinct from sign-in
 
-![Host sign-up](docs/screenshots/host-signup.png)
+<img src="docs/screenshots/host-signup.png" alt="Host sign-up" width="40%" />
 
 **Host dashboard** — create games (each with a unique room code), edit, share player link, project, delete
 
-![Host dashboard](docs/screenshots/host-dashboard.png)
+<img src="docs/screenshots/host-dashboard.png" alt="Host dashboard" width="40%" />
 
 **Projector / master view** — live top-down map with zones, obstacles, player positions, leaderboard and host controls
 
-![Projector / master view](docs/screenshots/master.png)
+<img src="docs/screenshots/master.png" alt="Projector / master view" width="40%" />
 
 **Player view** (mobile) — follow camera, virtual joystick, minimap, role badge
 
-![Player game view](docs/screenshots/player-game.png)
+<img src="docs/screenshots/player-game.png" alt="Player game view" width="20%" />
 
 **Player role selection** — pick a role at join time, each with a unique passive bonus
 
-![Player role selection](docs/screenshots/player-role.png)
+<img src="docs/screenshots/player-role.png" alt="Player role selection" width="20%" />
 
 **Editor — NPCs tab** — two-pane layout: character list rail + full properties panel; drag NPCs on the map
 
-![Editor NPCs tab](docs/screenshots/editor-npcs.png)
+<img src="docs/screenshots/editor-npcs.png" alt="Editor NPCs tab" width="40%" />
 
 **Editor — Map tab** — drag/resize zones & obstacles, theme picker, background image upload, aspect ratio control
 
-![Editor Map tab](docs/screenshots/editor-map.png)
+<img src="docs/screenshots/editor-map.png" alt="Editor Map tab" width="40%" />
 
 **Editor — Roles tab** — define roles, emoji, description and passive bonus type
 
-![Editor Roles tab](docs/screenshots/editor-roles.png)
+<img src="docs/screenshots/editor-roles.png" alt="Editor Roles tab" width="40%" />
 
 **Starter templates** — 5 ready-made scenarios with real floor-plan backgrounds (School shown here)
 
-![Template picker](docs/screenshots/editor-template-menu.png)
+<img src="docs/screenshots/editor-template-menu.png" alt="Template picker" width="40%" />
 
-![Template loaded in editor](docs/screenshots/editor-template.png)
+<img src="docs/screenshots/editor-template.png" alt="Template loaded in editor" width="40%" />
 
 ---
 

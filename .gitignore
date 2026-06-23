@@ -1,0 +1,16 @@
+# WandrQuest — public portfolio repo
+# Source code, schema and tooling are kept private.
+# Only README.md and docs/screenshots are committed.
+
+# Ignore everything
+*
+
+# Keep this file
+!.gitignore
+
+# Keep the README
+!README.md
+
+# Keep screenshots
+!docs/
+!docs/**

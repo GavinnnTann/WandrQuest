@@ -2,7 +2,7 @@
 
 **A live, multiplayer "walk-around" quiz game for classrooms, training days, and events.**
 
-Players join on their phones, explore a top-down map, walk up to characters (NPCs) to answer scenario questions, and climb a live leaderboard projected on the big screen — Kahoot meets a tiny Pokémon world.
+Players join on their phones, explore a neon top-down map, walk up to holographic characters (NPCs) to answer scenario questions, fight over territory with their team, and climb a live leaderboard projected on the big screen — Kahoot meets a tiny cyberpunk Pokémon world.
 
 ![WandrQuest projector view](docs/screenshots/master.png)
 
@@ -41,13 +41,25 @@ The always-on demo room (`DEMO`) is themed as a **Classroom** — Sharing center
 
 <img src="docs/screenshots/master.png" alt="Projector / master view" width="40%" />
 
-**Player view** (mobile) — follow camera, virtual joystick, minimap, role badge
+**Player view** (mobile) — neon holo-grid world, follow camera, virtual joystick, minimap, role badge, XP rank
 
 <img src="docs/screenshots/player-game.png" alt="Player game view" width="20%" />
 
-**Player role selection** — pick a role at join time, each with a unique passive bonus
+**Player role selection** — pick a role at join time, each with a unique passive bonus and team colour
 
 <img src="docs/screenshots/player-role.png" alt="Player role selection" width="20%" />
+
+**Talking to an NPC** — holographic question terminal
+
+<img src="docs/screenshots/shot-talk.png" alt="Question terminal" width="20%" />
+
+**Answering correctly** — instant feedback + points
+
+<img src="docs/screenshots/shot-answer.png" alt="Correct answer feedback" width="20%" />
+
+**Projector — final standings** — pushed to every screen when the host ends the game
+
+<img src="docs/screenshots/master-end.png" alt="Projector final standings" width="40%" />
 
 **Editor — NPCs tab** — two-pane layout: character list rail + full properties panel; drag NPCs on the map
 
@@ -104,9 +116,12 @@ Load any template in the editor, customise the questions and layout, and save �
 - **Open / lock joining** — control when players can enter mid-game.
 - **2× points boost** — 60-second multiplier event.
 - **Speed round** — 30-second timed pressure event.
+- **Surge / Spotlight / Frenzy** — the same random world events players trigger organically, host-triggerable on demand.
 - **Boss spawn** — co-op challenge: 3+ players must gather at the centre to unlock a high-stakes question.
 - **End game** — push the final leaderboard to all screens.
 - **New game** — clear all players and scores to run again.
+- **Editable session timer** — type any duration (minutes), persists per browser; Reset returns to your chosen length.
+- **Hide/show QR join card** — dismiss it once everyone's joined so it stops covering the live map.
 
 ### Question mechanics
 - **Common** — standard, always available.
@@ -142,6 +157,29 @@ index.html        Landing page
 ---
 
 ## ✅ Recently shipped
+
+### ⚡ Neon overhaul — new look, new systems
+
+The player and projector views were fully reworked: a glossy neon "holo-grid" look (procedural
+circuit floor, holographic NPC pods, glowing avatars with light trails, particles, camera shake/
+zoom, synthesised sound effects — all generated in-browser, still zero image or audio assets and
+zero build step) plus four new gameplay systems layered on top of the original loop.
+
+| System | How it works |
+|---|---|
+| 🏴 **Zone Control** | Answering an NPC claims its zone for your role's team. Whichever team has the most claims owns the zone — it tints to their colour on the map, minimap and leaderboard, and pays that team +8 pts per zone every 30 s. |
+| 🟢 **Power-up orbs** | Orbs spawn near players every ~30s: ⚡ Overclock (next correct answer ×2), 💨 Dash (+45% speed), 🛡️ Streak Shield (survive one miss), 📡 Radar (reveal targets). |
+| ✦ **XP ranks** | Score doubles as XP — Rookie → Operative → Specialist → Veteran → Elite → Legend — with a rank-up splash and an aura-colour upgrade on your avatar. |
+| 👾 **Boss 2.0** | A dramatic "threat detected" intro, then a shared team **Boss Integrity** bar — every player's correct answer chips away at it, and defeating it pays everyone who joined the fight a +50 Team Takedown bonus. |
+
+<img src="docs/screenshots/leaderboard-drawer.png" alt="Zone Control panel in the leaderboard drawer" width="20%" />
+<img src="docs/screenshots/shot-powerup.png" alt="Power-up pickup" width="20%" />
+<img src="docs/screenshots/shot-levelup.png" alt="XP rank-up splash" width="20%" />
+<img src="docs/screenshots/achievement-drawer.png" alt="Mid-game achievement progress drawer" width="20%" />
+
+The projector view also got two host-requested quality-of-life fixes: the QR join card can be
+**hidden** (it was blocking the live map) with one click, and the **session timer is now editable**
+(type any duration in minutes) instead of being fixed at 15:00 — both preferences persist per browser.
 
 ### 📱 QR Code Joining
 
@@ -196,5 +234,7 @@ Actionable insights after each session, secured by RLS to the room's host.
 ### 🎮 Expanded Gameplay Mechanics
 
 * ✅ **Item collection quests** — collectible items on the map, live counter, bonus points, and the Collector achievement (the floating items and 🎒 counter are visible in the projector and player screenshots above)
-* Team-based objectives · trading & resource sharing · timed missions
-* Random world events · NPC dialogue trees · unlockable map areas · seasonal challenges
+* ✅ **Team-based objectives** — Zone Control (see "Neon overhaul" above)
+* ✅ **Random world events** — Speed Surge, Gold Rush, Spotlight, Answer Frenzy auto-fire every ~90s and are also host-triggerable from the projector
+* ✅ **Timed missions** — auto-generated side quests (zone sprints, streak runs, item grabs) with a countdown banner and bonus reward
+* Trading & resource sharing · NPC dialogue trees · unlockable map areas · seasonal challenges
